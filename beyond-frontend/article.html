@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>BeyondChats | Article</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Inter",sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+  padding:30px;
+}
+
+/* Back Button */
+.back{
+  text-decoration:none;
+  color:white;
+  background:#2563eb;
+  padding:10px 14px;
+  border-radius:8px;
+  font-size:14px;
+  font-weight:600;
+  transition:0.2s;
+}
+.back:hover{
+  background:#1d4ed8;
+}
+
+/* Container */
+.container{
+  max-width:950px;
+  margin:30px auto;
+  background:white;
+  color:#0f172a;
+  padding:40px;
+  border-radius:18px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.4);
+  animation:fadeIn .4s ease-in;
+}
+
+/* Title */
+h1{
+  font-size:30px;
+  line-height:38px;
+  margin-bottom:15px;
+}
+
+.meta{
+  color:#64748b;
+  font-size:14px;
+  margin-bottom:25px;
+}
+
+/* Article Content */
+#content{
+  font-size:17px;
+  line-height:28px;
+}
+
+#content h2{
+  margin-top:25px;
+  margin-bottom:10px;
+  font-size:22px;
+}
+
+#content h3{
+  margin-top:20px;
+}
+
+#content p{
+  margin-bottom:15px;
+}
+
+#content ul{
+  padding-left:20px;
+  margin:10px 0;
+}
+
+#content li{
+  margin-bottom:6px;
+}
+
+/* Reference Block */
+.ref-head{
+  margin-top:30px;
+  padding:10px 14px;
+  background:#eef4ff;
+  border-radius:8px;
+  font-weight:700;
+}
+
+a.link{
+  color:#2563eb;
+  text-decoration:none;
+}
+a.link:hover{
+  text-decoration:underline;
+}
+
+/* animation */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(10px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.loading{
+  text-align:center;
+  margin-top:50px;
+  color:#94a3b8;
+  font-size:18px;
+}
+.error{
+  text-align:center;
+  margin-top:50px;
+  color:#f87171;
+  font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<a class="back" href="index.html">⬅ Back</a>
+
+<div id="root"></div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+const root = document.getElementById("root");
+root.innerHTML = `<p class="loading">Loading article...</p>`;
+
+fetch("http://127.0.0.1:8000/api/articles/" + id)
+.then(res => res.json())
+.then(article => {
+  if(!article?.title){
+    root.innerHTML = `<p class="error">Article not found</p>`;
+    return;
+  }
+
+  root.innerHTML = `
+    <div class="container">
+      <h1>${article.title}</h1>
+      <p class="meta">Updated Status: ${article.is_updated ? "✅ AI Improved" : "❌ Original"}</p>
+
+      <div id="content">
+        ${article.content.replace(/\n/g, "<br>")}
+      </div>
+    </div>
+  `;
+})
+.catch(() => {
+  root.innerHTML = `<p class="error">Failed to load article</p>`;
+});
+</script>
+
+</body>
+</html>
