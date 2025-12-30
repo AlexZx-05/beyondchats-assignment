@@ -10,7 +10,7 @@ I inspected the repository at commit `bd207c87c8f033d22e09c45798dfc578cd8ad85d` 
 
 ---
 
-## Quick summary — What you made
+## Quick summary 
 
 You built a small full-stack application split into three parts:
 
@@ -22,7 +22,7 @@ Together these pieces form a demo/assignment app demonstrating an API backend, a
 
 ---
 
-## File structure (as found in the repo)
+## File structure 
 
 The tree below reflects the files and directories present in the repository at the inspected commit.
 
@@ -139,13 +139,5 @@ If you want, I can extract and list the exact environment variables from `beyond
 - CORS errors: either serve the frontend from same host/port or configure CORS in Laravel (`config/cors.php`) to allow origin.
 - Port conflicts: ensure services run on different ports.
 - Missing dependencies: run `composer install` and `npm install` in respective folders.
-
----
-
-## Next steps / suggestions
-
-- Add a root-level script or `docker-compose.yml` to run DB, backend, and node service together.
-- If real-time/sockets are used, document socket endpoints and how each component connects.
-- Remove `node_modules` from the repo and add it to `.gitignore` if present inadvertently.
 
 ---
