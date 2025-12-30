@@ -9,7 +9,7 @@ The project automates blog enhancement using AI and provides a complete system c
 
 ---
 
-## 🧠 Project Overview (Simple English)
+## 🧠 Project Overview 
 
 This project works like a smart content enhancer 👇
 
