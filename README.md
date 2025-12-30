@@ -163,8 +163,7 @@ const {
 } = useRealtimeAgent();
 ```
 
-### Configuration
-
+### Configuratio
 Customize behavior via `RealtimeConfig`:
 
 ```typescript
