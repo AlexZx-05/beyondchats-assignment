@@ -27,14 +27,14 @@ Together these pieces form a demo/assignment app demonstrating an API backend, a
 
 To quickly see the application working end-to-end, watch the demo video below:
 
-### ▶️ Watch Demo
-[![Watch Demo](https://img.shields.io/badge/Watch%20Demo-Click%20Here-blue)](https://drive.google.com/file/d/1hGRc30L7NE_Dgo23a04AJPNSwXfXMrRe/view?usp=drive_link)
+[![Demo Video](assets/demo-thumbnail.png)](https://drive.google.com/file/d/1hGRc30L7NE_Dgo23a04AJPNSwXfXMrRe/view?usp=drive_link)
 
 The video demonstrates:
 - Laravel backend running
 - Node script fetching and processing blogs with AI rewriting
 - Frontend displaying Updated and Non-Updated blogs
 - Full article view with references
+
 
 ---
 ## File structure (as found in the repo)
