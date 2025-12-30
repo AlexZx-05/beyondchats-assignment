@@ -39,9 +39,6 @@ beyondchats-assignment/
 ├── beyond-node → AI Automation Script
 └── frontend → Blog Viewer UI
 
-yaml
-Copy code
-
 ---
 
 # ⚙️ Step-By-Step Installation Guide
