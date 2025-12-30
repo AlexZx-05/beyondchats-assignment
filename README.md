@@ -32,7 +32,7 @@ This project works like a smart content enhancer 👇
 
 ---
 
-## 🏗️ Project Folder Structure
+## 🏗️ Project Folde Structure
 
 beyondchats-assignment/
 ├── backend-laravel → Laravel REST API + DB
