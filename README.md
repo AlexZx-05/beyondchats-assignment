@@ -34,11 +34,6 @@ This project works like a smart content enhancer 👇
 
 ## 🏗️ Project Folde Structure
 
-beyondchats-assignment/
-├── backend-laravel → Laravel REST API + DB
-├── beyond-node → AI Automation Script
-└── frontend → Blog Viewer UI
-
 ---
 
 # ⚙️ Step-By-Step Installation Guide
