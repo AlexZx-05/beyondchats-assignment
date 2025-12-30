@@ -34,8 +34,6 @@ This project works like a smart content enhancer 👇
 
 ## 🏗️ Project Folde Structure
 
----
-
 # ⚙️ Step-By-Step Installation Guide
 
 Follow these steps to run everything properly 👇
