@@ -22,12 +22,12 @@ Together these pieces form a demo/assignment app demonstrating an API backend, a
 
 ---
 ---
-
 ## 🎥 Demo Video (Working Project Proof)
 
 To quickly see the application working end-to-end, watch the demo video below:
 
-[![Demo Video](assets/demo-thumbnail.png)](https://drive.google.com/file/d/1hGRc30L7NE_Dgo23a04AJPNSwXfXMrRe/view?usp=drive_link)
+### ▶️ Watch Demo
+[![Watch Demo](https://img.shields.io/badge/Watch%20Demo-Click%20Here-blue)](https://drive.google.com/file/d/1hGRc30L7NE_Dgo23a04AJPNSwXfXMrRe/view?usp=drive_link)
 
 The video demonstrates:
 - Laravel backend running
