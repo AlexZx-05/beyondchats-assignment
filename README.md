@@ -149,10 +149,3 @@ If you want, I can extract and list the exact environment variables from `beyond
 - Remove `node_modules` from the repo and add it to `.gitignore` if present inadvertently.
 
 ---
-
-If you'd like, I can:
-- Insert this README into the repo for you.
-- Extract and list exact env keys from `beyond-backend/.env.example`.
-- Inspect `beyond-node/index.js` and `beyond-frontend/index.html` and update this README with precise endpoints and run instructions.
-
-Which of those would you like me to do next?
